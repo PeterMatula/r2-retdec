@@ -10,7 +10,7 @@ PoC of Radare2 and RetDec integration.
 
 ## Run
 
-* Get boththe PoC script `r2-retdec.py` and test file `ack.x86.gcc.O0.g.exe`.
+* Get both the PoC script `r2-retdec.py` and test file `ack.x86.gcc.O0.g.exe`.
 * Decompile function at address `0x4015ED` (`_main`):
 ```
 python r2-retdec.py ack.x86.gcc.O0.g.exe -r <path_to_retdec-decompiler.py> -f 0x4015ED
@@ -106,7 +106,7 @@ int32_t _ack(int32_t m, int32_t n) {
 
 ## State
 
-* Minimim information is exported from r2:
+* Minimum information is exported from r2:
    * Missing global variables.
    * Missing data types.
 * RetDec behaves like it was decompiling via IDA plugin. This might not be ideal.
